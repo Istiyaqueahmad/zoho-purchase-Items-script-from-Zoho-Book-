@@ -21,6 +21,7 @@ if(account_search.size() > 0)
 	account_id = account_data.get("id");
 	record_owner = account_data.get("Owner").get("id");
 	account_type = account_data.get("Account_Type");
+ 
 	// Process each line item
 	line_items = invoice.get("line_items");
 	info line_items;
