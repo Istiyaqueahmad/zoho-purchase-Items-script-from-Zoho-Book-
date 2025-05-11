@@ -2,11 +2,17 @@ zoho-purchase-Items-script-from-Zoho-Book during Invoice Creation
 
 
 invoiceID = invoice.get("invoice_id");
+
 organizationID = organization.get("organization_id");
+
 invoice_data = zoho.books.getRecordsByID("invoices",organizationID,invoiceID);
+
 customer_name = invoice.get("customer_name");
+
 account_criteria = "(Account_Name:equals:" + customer_name + ")";
+
 account_search = zoho.crm.searchRecords("Accounts",account_criteria);
+
 purchased_products = List();
 
 if(account_search.size() > 0)
