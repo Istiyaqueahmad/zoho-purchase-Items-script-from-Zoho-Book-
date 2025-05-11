@@ -16,6 +16,7 @@ account_search = zoho.crm.searchRecords("Accounts",account_criteria);
 purchased_products = List();
 
 if(account_search.size() > 0)
+
 {
 	account_data = account_search.get(0);
  
