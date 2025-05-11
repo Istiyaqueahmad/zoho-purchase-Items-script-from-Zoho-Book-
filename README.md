@@ -17,7 +17,7 @@ purchased_products = List();
 
 if(account_search.size() > 0)
 
-{
+        {
 	account_data = account_search.get(0);
  
 	account_id = account_data.get("id");
